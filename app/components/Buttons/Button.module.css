@@ -1,0 +1,12 @@
+.button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: solid #222 1px;
+  border-radius: 16rem;
+}
+.button:hover {
+  text-decoration: underline;
+}
