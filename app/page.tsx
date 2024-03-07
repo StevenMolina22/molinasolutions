@@ -1,12 +1,11 @@
 import { Presentation } from "./components/Presentation";
 import Navbar from "./components/Navbar";
-import { CardList } from "./components/Cards/CardList";
-import { cardFrontContent, cardBackContent} from "./utils/HomeData"
 import AboutUs from "./components/AboutUs";
+import { Experience } from "./components/Experience";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center py-16 px-3 gap-[128px]">
+    <main className="flex flex-col items-center py-12 px-3 gap-[144px]">
       {/* google icons provisional*/}
       <link
         rel="stylesheet"
@@ -15,7 +14,8 @@ export default function Home() {
       <Navbar />
       <Presentation />
       <AboutUs />
-      <CardList title="FrontEnd Development" listItems={cardFrontContent}/>
+      <Experience />
+      {/* <CardList title="FrontEnd Development" listItems={cardFrontContent}/> */}
     </main>
   );
 }
