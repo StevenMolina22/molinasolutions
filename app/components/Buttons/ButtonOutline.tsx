@@ -7,7 +7,7 @@ const ButtonOutline = ({ text }: Props) => {
   return (
     <div>
       {/* <button className={styles.button}>Button</button> */}
-      <button className="flex py-3 justify-center items-center px-6 gap-2 border border-zinc-700 rounded-full text-zinc-900 hover:bg-zinc-100">
+      <button className=" flex items-center justify-center gap-2 rounded-full border border-zinc-700 px-6 py-3 text-zinc-900 hover:bg-zinc-100">
         {text}
       </button>
     </div>
