@@ -2,10 +2,14 @@ import { Presentation } from "./components/Presentation";
 import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 import { Experience } from "./components/Experience";
+import { Techonologies } from "./components/Techonologies";
+import { Projects } from "./components/Projects";
+import { ContactUs } from "./components/ContactUs";
+import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center py-12 px-3 gap-[144px]">
+    <main className="flex flex-col items-center gap-[128px] px-3 py-12">
       {/* google icons provisional*/}
       <link
         rel="stylesheet"
@@ -15,6 +19,10 @@ export default function Home() {
       <Presentation />
       <AboutUs />
       <Experience />
+      <Techonologies />
+      <Projects />
+      <ContactUs />
+      <Footer/>
       {/* <CardList title="FrontEnd Development" listItems={cardFrontContent}/> */}
     </main>
   );
