@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-[128px] px-3 py-12">
+    <main className="flex flex-col items-center gap-[128px] px-6 py-12">
       {/* google icons provisional*/}
       <link
         rel="stylesheet"

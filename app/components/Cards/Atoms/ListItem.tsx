@@ -1,3 +1,5 @@
+import { SiDjango } from "react-icons/si";
+
 // type difinition for list item
 type Props = {
   title: string;
@@ -15,7 +17,7 @@ export const ListItem = ({ title, caption, icon }: Props) => {
       <div className="flex flex-col px-1 justify-center items-start gap-2">
         <span className="text-xl font-medium text-center text-zinc-900">
           {title}
-        </span>
+        </span>        
         <span className="text-zinc-600">{caption}</span>
       </div>
     </div>

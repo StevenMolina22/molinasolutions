@@ -23,7 +23,7 @@ const AboutUs = () => {
         <h2 className="text-5xl font-medium">About us </h2>
       </div>
       {/* content */}
-      <div className="flex flex-wrap items-center content-center gap-12 ">
+      <div className="flex flex-wrap items-center justify-center content-center gap-12 ">
         {/* image */}
         <div
           style={imageStyle}

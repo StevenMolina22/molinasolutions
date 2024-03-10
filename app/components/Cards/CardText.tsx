@@ -1,3 +1,4 @@
+
 // card text items type definition
 type CardItem = {
   Icon: React.FC;
@@ -10,6 +11,7 @@ type Props = {
 export const CardText = ({ cards }: Props) => {
   // returned card text component
   return (
+
     <div className="flex flex-wrap content-center items-center justify-center gap-6 rounded-3xl border border-zinc-600 p-8">
       {/* items */}
       {cards.map((item, index) => (
