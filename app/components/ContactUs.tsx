@@ -1,7 +1,6 @@
 import { CardText } from "./Cards/CardText";
-import { FaLinkedin, FaWhatsapp  } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-
 
 // Define a type for the icon prop that accepts both React Icons and Hero Icons
 

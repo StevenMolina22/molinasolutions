@@ -1,5 +1,5 @@
 import { CardSimple } from "./Cards/CardSimple";
-// started responsive design 
+// started responsive design
 
 const AboutUs = () => {
   // image declaration
@@ -19,21 +19,21 @@ const AboutUs = () => {
   return (
     <div className="flex flex-col items-center gap-6">
       {/* title text */}
-      <div className="flex flex-col justify-center items-center p-4 g-2">
+      <div className="g-2 flex flex-col items-center justify-center p-4">
         <h3 className="text-zinc-900">Get to know more</h3>
         <h2 className="text-5xl font-medium">About us </h2>
       </div>
       {/* content */}
-      <div className="flex flex-wrap items-center justify-center content-center gap-12 ">
+      <div className="flex flex-wrap content-center items-center justify-center gap-12 bg-gray-400">
         {/* image */}
         <div
           style={imageStyle}
-          className="w-[400px] h-[400px] rounded-3xl bg-cover bg-center"
+          className="h-[400px] w-[400px] rounded-3xl bg-cover bg-center"
         ></div>
         {/* info */}
-        <div className="flex flex-col flex-wrap items-center content-center gap-6">
+        <div className="flex flex-col flex-wrap content-center items-center gap-6">
           {/* cards */}
-          <div className="flex justity-center items-center gap-8 max-md:gap-4">
+          <div className="justity-center flex items-center gap-8 max-md:gap-4">
             <CardSimple
               title="Experience"
               messages={messageExperience}
@@ -46,7 +46,7 @@ const AboutUs = () => {
             />
           </div>
           {/* body text */}
-          <div className="flex items-center gap-3 w-full max-w-[600px]">
+          <div className="flex w-full max-w-[600px] items-center gap-3">
             Lorem ipsum dolor sit amet consectetur. Massa nec non mattis nullam.
             Mi dictum egestas erat nec porttitor nibh scelerisque ut risus.
             Fermentum nibh augue neque pellentesque justo. Phasellus sit non

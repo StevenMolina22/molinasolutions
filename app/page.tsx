@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-[128px] px-6 py-12 max-w-full">
+    <main className="flex max-w-[100vw] flex-col items-center gap-[128px] px-4 py-12">
       {/* google icons provisional*/}
       <link
         rel="stylesheet"
@@ -22,7 +22,7 @@ export default function Home() {
       <Techonologies />
       <Projects />
       <ContactUs />
-      <Footer/>
+      <Footer />
       {/* <CardList title="FrontEnd Development" listItems={cardFrontContent}/> */}
     </main>
   );
