@@ -24,11 +24,11 @@ const AboutUs = () => {
         <h2 className="text-5xl font-medium">About us </h2>
       </div>
       {/* content */}
-      <div className="flex flex-wrap content-center items-center justify-center gap-12 bg-gray-400">
+      <div className="flex flex-wrap content-center items-center justify-center gap-12">
         {/* image */}
         <div
           style={imageStyle}
-          className="h-[400px] w-[400px] rounded-3xl bg-cover bg-center"
+          className="max-sm:[384px] max-sm[384px] h-[400px] w-[400px] rounded-3xl bg-cover bg-center"
         ></div>
         {/* info */}
         <div className="flex flex-col flex-wrap content-center items-center gap-6">

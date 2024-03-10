@@ -11,7 +11,7 @@ export const Presentation = () => {
       {/* profile image */}
       <div
         style={imageStyle}
-        className="w-[400px] h-[400px] bg-slate-200 rounded-full bg-cover bg-center"
+        className="max-sm:[384px] max-sm[384px] w-[400px] h-[400px] bg-slate-200 rounded-full bg-cover bg-center"
       ></div>
       {/* ... */}
 
