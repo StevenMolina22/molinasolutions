@@ -14,8 +14,8 @@ type CardItem = {
 export const ContactUs = () => {
   // card text items content
   const itemsContentSocial: CardItem[] = [
-    { Icon: FaLinkedin, message: "molinasolutions@gmail.com" },
-    { Icon: IoMail, message: "LinkedIn" },
+    { Icon: IoMail, message: "molinasolutions@gmail.com" },
+    { Icon: FaLinkedin, message: "LinkedIn/MolinaSolutions" },
   ];
   const itemsContentNumbers: CardItem[] = [
     { Icon: FaWhatsapp, message: "+54 9 11 6221-6633" },

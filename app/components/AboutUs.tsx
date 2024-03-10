@@ -1,4 +1,5 @@
 import { CardSimple } from "./Cards/CardSimple";
+// started responsive design 
 
 const AboutUs = () => {
   // image declaration
@@ -32,7 +33,7 @@ const AboutUs = () => {
         {/* info */}
         <div className="flex flex-col flex-wrap items-center content-center gap-6">
           {/* cards */}
-          <div className="flex justity-center items-center gap-8">
+          <div className="flex justity-center items-center gap-8 max-md:gap-4">
             <CardSimple
               title="Experience"
               messages={messageExperience}
