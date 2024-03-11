@@ -23,7 +23,6 @@ export default function Home() {
       <Projects />
       <ContactUs />
       <Footer />
-      {/* <CardList title="FrontEnd Development" listItems={cardFrontContent}/> */}
     </main>
   );
 }

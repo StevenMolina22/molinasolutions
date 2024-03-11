@@ -16,14 +16,16 @@ export const CardList = ({ title, listItems }: CardListProps) => {
   const cardCol1 = listItems.slice(0, 3);
   const cardCol2 = listItems.slice(3, 6);
   return (
-    <div className="flex flex-col items-center gap-6 py-10 px-16 rounded-[32px] border border-zinc-700">
+    <div className="flex flex-col items-center gap-6 rounded-[32px] border border-zinc-700 px-16 py-10 max-sm:px-8">
       {/* -- title */}
-      <div className="text-center text-2xl font-medium text-zinc-800 ">{title}</div>
+      <div className="text-center text-2xl font-medium text-zinc-800 ">
+        {title}
+      </div>
 
       {/* -- items */}
-      <div className="flex gap-6 justify-center items-start content-start flex-wrap">
+      <div className="flex flex-wrap content-start items-start justify-center gap-6 ">
         {/* - column 1 */}
-        <div className="flex flex-col flex-start gap-8">
+        <div className="flex-start flex flex-col gap-8 ">
           {/* items */}
           {cardCol1.map((item, index) => (
             <ListItem
@@ -36,7 +38,7 @@ export const CardList = ({ title, listItems }: CardListProps) => {
         </div>
 
         {/* - column 2 */}
-        <div className="flex flex-col flex-start gap-8">
+        <div className="flex-start flex flex-col gap-8">
           {cardCol2.map((item, index) => (
             <ListItem
               key={index}

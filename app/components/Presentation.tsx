@@ -7,18 +7,18 @@ export const Presentation = () => {
   const imageStyle = { backgroundImage: `url(${image})` };
   // returned presentation component
   return (
-    <div className="flex gap-4 flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center gap-4">
       {/* profile image */}
       <div
         style={imageStyle}
-        className="max-sm:[384px] max-sm[384px] w-[400px] h-[400px] bg-slate-200 rounded-full bg-cover bg-center"
+        className="max-sm:w-[368px] h-[400px] max-sm:h-[368px] w-[400px] rounded-full bg-cover bg-center"
       ></div>
       {/* ... */}
 
       {/* info content */}
-      <div className="flex flex-col justify-center items-center gap-4">
+      <div className="flex flex-col items-center justify-center gap-4">
         {/* title text */}
-        <div className="inline-flex flex-col justify-center items-center gap-3">
+        <div className="inline-flex flex-col items-center justify-center gap-3">
           <p className="text-base text-zinc-800"> Hello we are </p>
           <h1 className="text-5xl font-medium text-zinc-900">
             Molina Solutions
@@ -26,7 +26,7 @@ export const Presentation = () => {
           <h3 className="text-2xl text-zinc-700">Full Stack Developers</h3>
         </div>
         {/* buttons */}
-        <div className="flex gap-2 justify-center">
+        <div className="flex justify-center gap-2">
           <ButtonDefault text="Download CV" />
           <ButtonOutline text="Contact Info" />
         </div>
@@ -34,4 +34,3 @@ export const Presentation = () => {
     </div>
   );
 };
-

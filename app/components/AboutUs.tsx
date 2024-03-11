@@ -28,7 +28,7 @@ const AboutUs = () => {
         {/* image */}
         <div
           style={imageStyle}
-          className="max-sm:[384px] max-sm[384px] h-[400px] w-[400px] rounded-3xl bg-cover bg-center"
+          className="h-[400px] w-[400px] rounded-3xl bg-cover bg-center max-sm:w-full"
         ></div>
         {/* info */}
         <div className="flex flex-col flex-wrap content-center items-center gap-6">
