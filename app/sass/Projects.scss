@@ -1,0 +1,41 @@
+// grid and general layout settings
+.media-object {
+  display: grid;
+  // background-color: #ccc;
+  grid-template-columns: 450px 92px 450px;
+  grid-template-rows: repeat(3, 1fr);
+  &__image {
+    aspect-ratio: 16/9;
+    // background-image: url("../../public/moperclub-page.png");
+    background-size: cover;
+    background-position: center;
+    grid-area: 1 / 1 / 3 / 3;
+  }
+  &__content {
+    // background-color: #aaa;
+    grid-area: 2 / 2 / 4 / 4;
+  }
+}
+@media (max-width: 932px) {
+  .media-object {
+    grid-template-columns: 1fr; /* Set one column for mobile */
+    grid-template-rows: auto auto; /* Set auto rows for mobile */
+    gap: 12px;
+  }
+  .media-object__image {
+    grid-area: 1 / 1 / 2 / 2; /* Adjust grid area for image on mobile */
+  }
+  .media-object__content {
+    grid-area: 2 / 1 / 3 / 2; /* Adjust grid area for content on mobile */
+  }
+}
+
+// gradient
+.gradient-info {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.125) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  backdrop-filter: blur(32px) brightness(1.5); /* Blur */
+}
