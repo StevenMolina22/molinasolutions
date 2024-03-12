@@ -22,7 +22,7 @@ export const ContactUs = () => {
   ];
   // returned contact us section
   return (
-    <div className="flex flex-col items-center gap-4">
+    <section id="contactUs" className="flex flex-col items-center gap-4">
       {/* title text */}
       <div className="flex flex-col items-center justify-center">
         <span className="text-zinc-600">Get to know more</span>
@@ -33,6 +33,6 @@ export const ContactUs = () => {
         <CardText cards={itemsContentSocial} />
         <CardText cards={itemsContentNumbers} />
       </div>
-    </div>
+    </section>
   );
 };

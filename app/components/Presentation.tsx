@@ -1,23 +1,35 @@
+"use client";
+import React from "react";
 import { ButtonDefault } from "./Buttons/ButtonDefault";
 import ButtonOutline from "./Buttons/ButtonOutline";
 
-export const Presentation = () => {
+interface PresentationProps {}
+
+const Presentation: React.FC<PresentationProps> = () => {
   // defintion of profile image
-  const image: string = "/hat-robot2.jpg";
+  const image = "/hat-robot2.jpg"; // Define image path
   const imageStyle = { backgroundImage: `url(${image})` };
-  // returned presentation component
+
+  // downloading of pdf
+
+  const handleDownloadClick = (): void => {
+    const pdfUrl = ".pdf"; // Replace with your PDF path
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "curriculum.pdf";
+    link.click();
+  };
+
   return (
-    <div className="flex flex-wrap justify-center gap-4">
-      {/* profile image */}
+    // returned presentation component
+    <section id="presentation" className="flex flex-wrap justify-center gap-4">
       <div
         style={imageStyle}
-        className="max-sm:w-[368px] h-[400px] max-sm:h-[368px] w-[400px] rounded-full bg-cover bg-center"
+        className="h-[400px] w-[400px] rounded-full bg-cover bg-center max-sm:h-[368px] max-sm:w-[368px]"
       ></div>
-      {/* ... */}
 
       {/* info content */}
       <div className="flex flex-col items-center justify-center gap-4">
-        {/* title text */}
         <div className="inline-flex flex-col items-center justify-center gap-3">
           <p className="text-base text-zinc-800"> Hello we are </p>
           <h1 className="text-5xl font-medium text-zinc-900">
@@ -25,12 +37,14 @@ export const Presentation = () => {
           </h1>
           <h3 className="text-2xl text-zinc-700">Full Stack Developers</h3>
         </div>
-        {/* buttons */}
+
         <div className="flex justify-center gap-2">
-          <ButtonDefault text="Download CV" />
-          <ButtonOutline text="Contact Info" />
+          <ButtonDefault onClick={handleDownloadClick} text="Download CV" />
+          <ButtonOutline link="#contactUs" text="Contact Info" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
+
+export default Presentation;

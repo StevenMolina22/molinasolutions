@@ -17,7 +17,7 @@ const AboutUs = () => {
 
   // returned about us section
   return (
-    <div className="flex flex-col items-center gap-6">
+    <section id="aboutUs" className="flex flex-col items-center gap-6">
       {/* title text */}
       <div className="g-2 flex flex-col items-center justify-center p-4">
         <h3 className="text-zinc-900">Get to know more</h3>
@@ -55,7 +55,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

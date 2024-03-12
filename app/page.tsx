@@ -1,4 +1,4 @@
-import { Presentation } from "./components/Presentation";
+import Presentation from "./components/Presentation";
 import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 import { Experience } from "./components/Experience";

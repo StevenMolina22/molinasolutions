@@ -1,4 +1,5 @@
 import ButtonOutline from "../Buttons/ButtonOutline";
+import { ButtonText } from "../Buttons/ButtonText";
 
 // type definition for the media object
 type Props = {
@@ -6,8 +7,10 @@ type Props = {
   title: string;
   image: string;
   body: string;
+  links: string[];
 };
-export const MediaObject = ({ caption, title, image, body }: Props) => {
+
+export const MediaObject = ({ caption, title, image, body, links }: Props) => {
   const imageStyle = { backgroundImage: `url(${image})` };
 
   return (
@@ -30,8 +33,9 @@ export const MediaObject = ({ caption, title, image, body }: Props) => {
         </div>
         {/* buttons */}
         <div className="flex gap-3">
-          <ButtonOutline text="Demo" />
-          <ButtonOutline text="Code" />
+          {/* <ButtonText text="Learn More" /> */}
+          <ButtonOutline link={links[0]} text="Demo" />
+          <ButtonOutline link={links[1]} text="Code" />
         </div>
       </div>
     </div>

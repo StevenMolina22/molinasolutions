@@ -1,20 +1,20 @@
-"client";
-// import styles from "./Button.module.css";
-import React from "react";
-
-// type definition for button default props
-type Props = {
+"use client";
+// ButtonDefault.tsx
+interface ButtonDefaultProps {
   text: string;
+  onClick?: () => void;
 }
 
-export const ButtonDefault = ({text}: Props) => {
+export const ButtonDefault: React.FC<ButtonDefaultProps> = ({
+  text,
+  onClick,
+}) => {
   return (
-    <div>
-      {/* <button className={styles.button}>Button</button> */}
-      <button className="flex py-3 px-6 justify-center items-center gap-2 bg-zinc-700 rounded-full text-zinc-100 hover:bg-zinc-600">
-        {text}
-      </button>
-    </div>
+    <button
+      onClick={onClick}
+      className="flex items-center justify-center gap-2 rounded-full bg-zinc-700 px-6 py-3 text-zinc-100 hover:bg-zinc-600"
+    >
+      {text}
+    </button>
   );
 };
-

@@ -6,10 +6,18 @@ export const Projects = () => {
   // image settings
   const imageFirst = "moperclub-page.png";
   const imageSecond = "encrypter-page.jpeg";
+  const buttonLinksEncypter = [
+    "https://stevenmolina22.github.io/Proyecto-Cifrador/",
+    "https://github.com/StevenMolina22/Proyecto-Cifrador",
+  ];
+  const buttonLinksMoper = [
+    "https://moperclub-client.vercel.app/",
+    "https://github.com/StevenMolina22/moperclub-client",
+  ];
   const text =
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptatibus quidem ut quisquam autem, fuga accusamus consequuntur explicabo. Inventore suscipit eaque ipsum distinctio, ratione reprehenderit id aliquam, sed, voluptate quidem vero vitae libero? Molestiae consectetur sint porro quae ad ipsum nesciunt! Eius non pariatur perspiciatis, incidunt quaerat quibusdam doloremque dolorum dolore ab asperiores aliquam aspernatur nemo, praesentium nostrum veritatis enim";
   return (
-    <div>
+    <section id="projects" className="flex flex-col items-center gap-6">
       {/* Title */}
       <div className="flex flex-col items-center justify-center gap-2 p-4">
         <p className="text-zinc-700">Get to know more</p>
@@ -17,13 +25,14 @@ export const Projects = () => {
       </div>
 
       {/* Content Projects*/}
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-8">
         {/* first project */}
         <MediaObject
           title="Moperclub"
           caption="Featured Project"
           image={imageFirst}
           body={text}
+          links={buttonLinksMoper}
         />
         {/* second project */}
         <MediaObject
@@ -31,8 +40,9 @@ export const Projects = () => {
           caption="Featured Project"
           image={imageSecond}
           body={text}
+          links={buttonLinksEncypter}
         />
       </div>
-    </div>
+    </section>
   );
 };

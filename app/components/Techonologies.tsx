@@ -5,7 +5,7 @@ import { SiDjango } from "react-icons/si";
 
 export const Techonologies = () => {
   return (
-    <div className="flex flex-wrap content-center items-center justify-center gap-24 text-zinc-300">
+    <section className="flex flex-wrap content-center items-center justify-center gap-24 text-zinc-300">
       <div className="flex items-start gap-4 ">
         <SiDjango size={56} />
         <span className="text-5xl font-extrabold">Django</span>
@@ -22,6 +22,6 @@ export const Techonologies = () => {
         <CgFigma size={56} />
         <span className="text-5xl font-extrabold">Figma</span>
       </div>
-    </div>
+    </section>
   );
 };
