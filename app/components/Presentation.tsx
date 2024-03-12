@@ -13,7 +13,7 @@ const Presentation: React.FC<PresentationProps> = () => {
   // downloading of pdf
 
   const handleDownloadClick = (): void => {
-    const pdfUrl = ".pdf"; // Replace with your PDF path
+    const pdfUrl = "curriculum.pdf"; // Replace with your PDF path
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "curriculum.pdf";
