@@ -47,11 +47,7 @@ const AboutUs = () => {
           </div>
           {/* body text */}
           <div className="flex w-full max-w-[600px] items-center gap-3">
-            Lorem ipsum dolor sit amet consectetur. Massa nec non mattis nullam.
-            Mi dictum egestas erat nec porttitor nibh scelerisque ut risus.
-            Fermentum nibh augue neque pellentesque justo. Phasellus sit non
-            amet massa semper purus leo leo. Quam tincidunt netus vitae enim et.
-            Id nulla vitae tristique sed id orci massa in in.
+          We are a dynamic team of software developers specializing in crafting top-notch websites using cutting-edge technologies. From conceptualization and design to deployment and maintenance, we handle every stage of your project with precision. Whether you require custom development, responsive design, or e-commerce solutions, we have the expertise to deliver results that exceed your expectations. Let us bring your vision to life on the web.
           </div>
         </div>
       </div>

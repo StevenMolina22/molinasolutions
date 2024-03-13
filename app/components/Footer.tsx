@@ -5,10 +5,30 @@ export const Footer = () => {
     <footer className="flex flex-col items-center justify-center gap-8 ">
       {/* items */}
       <div className="flex flex-wrap content-center items-center justify-center gap-8 max-sm:flex-col">
-        <a href="#aboutUs" className="text-2xl font-medium text-zinc-900">About</a>
-        <a href="#projects" className="text-2xl font-medium text-zinc-900">Projects</a>
-        <a href="#experience" className="text-2xl font-medium text-zinc-900">Experience</a>
-        <a href="#contactUs" className="text-2xl font-medium text-zinc-900">Contact</a>
+        <a
+          href="#aboutUs"
+          className="text-2xl font-medium text-zinc-900 hover:underline"
+        >
+          About
+        </a>
+        <a
+          href="#projects"
+          className="text-2xl font-medium text-zinc-900 hover:underline"
+        >
+          Projects
+        </a>
+        <a
+          href="#experience"
+          className="text-2xl font-medium text-zinc-900 hover:underline"
+        >
+          Experience
+        </a>
+        <a
+          href="#contactUs"
+          className="text-2xl font-medium text-zinc-900 hover:underline"
+        >
+          Contact
+        </a>
       </div>
       {/* caption */}
       <p className="text-sm text-zinc-600">

@@ -14,8 +14,10 @@ export const Projects = () => {
     "https://moperclub-client.vercel.app/",
     "https://github.com/StevenMolina22/moperclub-client",
   ];
-  const text =
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptatibus quidem ut quisquam autem, fuga accusamus consequuntur explicabo. Inventore suscipit eaque ipsum distinctio, ratione reprehenderit id aliquam, sed, voluptate quidem vero vitae libero? Molestiae consectetur sint porro quae ad ipsum nesciunt! Eius non pariatur perspiciatis, incidunt quaerat quibusdam doloremque dolorum dolore ab asperiores aliquam aspernatur nemo, praesentium nostrum veritatis enim";
+  const textMoper =
+    "Discover our innovative project, harmonizing React TS frontend with Django PostgreSQL backend. Crafted with a responsive design and elegant Figma layouts, it seamlessly integrates backend data into interactive sliders and cards. Experience efficient information retrieval and presentation, ensuring a captivating user experience powered by meticulously organized code and advanced technologies.";
+  const textEncypter =
+    "Explore our cutting-edge encrypter project featuring an exquisite, responsive design. Seamlessly encrypt or decrypt text with intuitive functionality. Leveraging Sass, HTML, and JS technologies, this tool ensures smooth encryption operations, empowering users with enhanced data security and privacy ";
   return (
     <section id="projects" className="flex flex-col items-center gap-6">
       {/* Title */}
@@ -31,7 +33,7 @@ export const Projects = () => {
           title="Moperclub"
           caption="Featured Project"
           image={imageFirst}
-          body={text}
+          body={textMoper}
           links={buttonLinksMoper}
         />
         {/* second project */}
@@ -39,7 +41,7 @@ export const Projects = () => {
           title="Encrypter"
           caption="Featured Project"
           image={imageSecond}
-          body={text}
+          body={textEncypter}
           links={buttonLinksEncypter}
         />
       </div>

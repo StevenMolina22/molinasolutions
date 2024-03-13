@@ -17,7 +17,7 @@ export const cardFrontContent = [
   },
   {
     title: "NEXT JS",
-    caption: "Experienced",
+    caption: "Advanced",
     icon: "check_circle",
   },
   {
@@ -27,7 +27,7 @@ export const cardFrontContent = [
   },
   {
     title: "FIGMA",
-    caption: "Experienced",
+    caption: "Advanced",
     icon: "check_circle",
   },
 ]
@@ -44,7 +44,7 @@ export const cardBackContent = [
   },
   {
     title: "POSTGRESQL",
-    caption: "Experienced",
+    caption: "Advanced",
     icon: "check_circle",
   },
   {
@@ -54,12 +54,12 @@ export const cardBackContent = [
   },
   {
     title: "CLOUD",
-    caption: "Experienced",
+    caption: "Advanced",
     icon: "check_circle",
   },
   {
     title: "DEPLOYMENT",
-    caption: "Experienced",
+    caption: "Advanced",
     icon: "check_circle",
   },
 ]
