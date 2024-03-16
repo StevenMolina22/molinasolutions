@@ -9,16 +9,7 @@ const Presentation: React.FC<PresentationProps> = () => {
   // defintion of profile image
   const image = "/hat-robot2.jpg"; // Define image path
   const imageStyle = { backgroundImage: `url(${image})` };
-
-  // downloading of pdf
-
-  const handleDownloadClick = (): void => {
-    const pdfUrl = "curriculum.pdf"; // Replace with your PDF path
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "curriculum.pdf";
-    link.click();
-  };
+  const curriculumURL = "https://drive.google.com/file/d/1XcdWTHNq4KtZAe7bJB6DR50HrEH8aNiy/view?usp=drive_link";
 
   return (
     // returned presentation component
@@ -39,7 +30,7 @@ const Presentation: React.FC<PresentationProps> = () => {
         </div>
 
         <div className="flex justify-center gap-2">
-          <ButtonDefault onClick={handleDownloadClick} text="Download CV" />
+          <ButtonDefault link={curriculumURL} text="Download CV" />
           <ButtonOutline link="#contactUs" text="Contact Info" />
         </div>
       </div>
