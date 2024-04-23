@@ -15,6 +15,7 @@ type CardListProps = {
 export const CardList = ({ title, listItems }: CardListProps) => {
   const cardCol1 = listItems.slice(0, 3);
   const cardCol2 = listItems.slice(3, 6);
+
   return (
     <div className="flex flex-col items-center gap-6 rounded-[32px] border border-zinc-700 px-16 py-10 max-sm:px-8">
       {/* -- title */}

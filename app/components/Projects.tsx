@@ -44,7 +44,7 @@ export const Projects = () => {
           body={textEncypter}
           links={buttonLinksEncypter}
         />
-      </div>
+        </div>
     </section>
   );
 };
