@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ToggleMenuButton } from "./Buttons/ToggleMenuButton";
+import { UserButton } from "@clerk/nextjs";
 
 const Navbar = () => {
   // manage state of the navbar
@@ -56,6 +57,7 @@ const Navbar = () => {
         >
           Contact
         </a>
+        <UserButton />
       </div>
       {/* menu button */}
     </header>
